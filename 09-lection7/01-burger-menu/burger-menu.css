@@ -1,0 +1,28 @@
+.menu {
+    max-width: 375px;
+    background: #F9FAFC;
+    padding: 17px 16px;
+}
+
+.menu__header {
+    display: flex;
+    position: relative;
+}
+
+/*.menu__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #DDE2E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.menu__cross {
+    width: 14px;
+    height: 14px;
+    border: 18px solid #DDE2E5;
+}
+
+.
