@@ -2,19 +2,20 @@
     width: 124px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .theme__sun {
     order: -1;
     width: 24px;
     height: 24px;
-    color: #212429;
+    color: var(--black);
 }
 
 .theme__moon {
     width: 24px;
     height: 24px;
-    color: #ACB5BD;
+    color: var(--grey-3);
 }
 
 .theme__input {
@@ -26,7 +27,7 @@
     width: 52px;
     height: 28px;
     background: var(--white);
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     border-radius: 16px;
     display: flex;
     justify-content: left;
@@ -36,7 +37,7 @@
 .theme__toggle {
     width: 24px;
     height: 24px;
-    background: #ACB5BD;
+    background: var(--grey-3);
     border-radius: 16px;
 }
 
@@ -45,10 +46,15 @@
 }
 
 .theme__input:checked ~ .theme__sun {
-    color: #ACB5BD;
+    color: var(--grey-3);
 }
 
 .theme__input:checked ~ .theme__moon {
-    color: #212429;
+    color: var(--black)
 }
 
+@media screen and (max-width: 375px) {
+    .theme {
+        display: none;
+    }
+}

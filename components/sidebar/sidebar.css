@@ -4,7 +4,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: #000000;
+    color: var(--full-black);
 }
 
 .sidebar__link {
@@ -18,5 +18,5 @@
 }
 
 .sidebar__link_active {
-    color: #D84910;
+    color: var(--sidebar-link-active);
 }

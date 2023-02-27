@@ -4,20 +4,21 @@
 }
 
 .tooltip__trigger {
-    width: 24vw;
-    height: 24vw;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    color: #212429;
+    color: var(--black);
 }
 
 .tooltip__helper {
     display: none;
-    background: #4263EB;
+    background: var(--blue);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 10px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
     text-align: center;
     color: var(--white);
@@ -36,7 +37,7 @@
     content: '';
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 7px solid #4263EB;
+    border-top: 7px solid var(--blue);
     transform: translateX(-50%);
 }
 
