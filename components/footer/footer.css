@@ -1,7 +1,5 @@
 .footer {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    text-align: center;
+
 }
 
 .footer__template {
@@ -10,7 +8,7 @@
 
 .footer__main {
     padding: 71px 0 136px;
-    background: var(--white);
+    background: #FFFFFF;
 }
 
 .footer__title {
@@ -28,37 +26,29 @@
 }
 
 .footer__info {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
+    text-align: center;
 }
 
 .footer__title_template {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
+    text-align: center;
 }
 
 @media screen and (max-width: 375px) {
-    .footer__title {
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 38px;
-    }
-
-    .footer__title_gap {
-        margin-bottom: 20px;
-    }
-
-    .footer__info {
-        font-size: 12px;
-    }
-
-    .footer__main {
-        padding: 50px 0;
+    .footer {
+        display: none;
     }
 }

@@ -1,16 +1,5 @@
 .tabs {
-    background: var(--white);
-}
-
-.tabs__wrap {
-    display: flex;
-    gap: 40px;
-}
-
-.tabs__radio {
-    display: inline-block;
-    position: relative;
-
+    height: 100%;
 }
 
 .tabs__input {
@@ -25,31 +14,40 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    white-space: nowrap;
     padding-bottom: 8px;
-    border-bottom: 5px solid var(--grey-5);
+    cursor: pointer;
+    position: relative;
+    color: var(--grey-3);
+    white-space: nowrap;
 }
 
-.tabs__input:checked ~ .tabs__title{
+.tabs__scroller {
+    background: var(--white);
+    overflow: hidden;
+}
+
+.tabs__menu {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+}
+
+.tabs__line {
+    height: 1px;
+    background: var(--grey-2);
+}
+
+.tabs__input_all-components:checked ~ .tabs__scroller .tabs__title[for="#all-components"],
+.tabs__input_units:checked ~ .tabs__scroller .tabs__title[for="#units"],
+.tabs__input_elements:checked ~ .tabs__scroller .tabs__title[for="#elements"],
+.tabs__input_containers:checked ~ .tabs__scroller .tabs__title[for="#containers"] {
     border-bottom: 5px solid var(--black);
+    color: var(--black);
 }
 
-.tabs:has(.tabs__input[data-block="all-components"]:checked) ~ .preview__wrap .card {
-    display: flex;
-}
-
-.tabs:has(.tabs__input[data-block="elements"]:checked) ~ .preview__wrap .card[data-type="element"] {
-    display: flex;
-}
-
-.tabs:has(.tabs__input[data-block="container"]:checked) ~ .preview__wrap .card[data-type="container"] {
-    display: flex;
-}
-
-
-@media screen and (max-width: 375px) {
-    .tabs__wrap {
-        gap: 0;
-        justify-content: space-between;
-    }
+.tabs__input_all-components:checked ~ .preview__wrap .preview__cards_all-components,
+.tabs__input_units:checked ~ .preview__wrap .preview__cards_units,
+.tabs__input_elements:checked ~ .preview__wrap .preview__cards_elements,
+.tabs__input_containers:checked ~ .preview__wrap .preview__cards_containers {
+    display: grid;
 }

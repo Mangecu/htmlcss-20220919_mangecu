@@ -7,12 +7,12 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-    color: var(--black);
+    color: #212429;
 }
 
 .tooltip__helper {
     display: none;
-    background: var(--blue);
+    background: #4263EB;
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 10px;
     font-family: "Inter", sans-serif;
@@ -37,7 +37,7 @@
     content: '';
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 7px solid var(--blue);
+    border-top: 7px solid #4263EB;
     transform: translateX(-50%);
 }
 

@@ -4,7 +4,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: var(--full-black);
+    color: #000000;
 }
 
 .sidebar__link {
@@ -18,5 +18,11 @@
 }
 
 .sidebar__link_active {
-    color: var(--sidebar-link-active);
+    color: #D84910;
+}
+
+@media screen and (max-width: 375px) {
+    .sidebar {
+        display: none;
+    }
 }

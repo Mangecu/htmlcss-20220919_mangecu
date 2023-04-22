@@ -3,19 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .theme__sun {
     order: -1;
     width: 24px;
     height: 24px;
-    color: var(--black);
+    color: #212429;
 }
 
 .theme__moon {
     width: 24px;
     height: 24px;
-    color: var(--grey-3);
+    color: #ACB5BD;
 }
 
 .theme__input {
@@ -27,34 +28,30 @@
     width: 52px;
     height: 28px;
     background: var(--white);
-    border: 1px solid var(--grey-3);
+    border: 1px solid #ACB5BD;
     border-radius: 16px;
-    display: flex;
-    justify-content: left;
+    position: relative;
     padding: 1px;
 }
 
 .theme__toggle {
     width: 24px;
     height: 24px;
-    background: var(--grey-3);
+    background: #ACB5BD;
     border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .theme__input:checked ~ .theme__state {
-    justify-content: right;
+    right: 0;
 }
 
 .theme__input:checked ~ .theme__sun {
-    color: var(--grey-3);
+    color: #ACB5BD;
 }
 
 .theme__input:checked ~ .theme__moon {
-    color: var(--black)
-}
-
-@media screen and (max-width: 375px) {
-    .theme {
-        display: none;
-    }
+    color: #212429;
 }
